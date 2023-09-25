@@ -1,0 +1,218 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Align logo and website name vertically */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add spacing between the logo and website name */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Menu bar styles */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 30px; /* Add spacing between menu and search bar */
+}
+
+nav ul.menu li {
+    margin-right: 10px; /* Add spacing between menu items */
+    position: relative; /* Enable relative positioning for submenus */
+}
+
+nav ul.menu li:last-child {
+    margin-right: 0; /* Remove spacing from the last menu item */
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    z-index: 1; /* Ensure submenu appears above other content */
+}
+
+nav ul.menu li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+    z-index: 2; /* Ensure dropdown menu appears above submenu */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown menu on hover */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px; /* Set a maximum width for the main content area */
+    margin: 0px auto; /* Center the main content and add spacing */
+    padding: 50px; /* Add spacing inside the main content area */
+    background-color: #fff; /* Set a background color for the main content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for visual separation */
+}
+
+/* Video container styles */
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow videos to wrap to the next line if needed */
+    justify-content: space-between; /* Distribute videos evenly across the container */
+}
+
+/* Video styles */
+.video {
+    width: calc(50% - 30px); /* Adjust the width and margin as needed */
+    margin-right: 0 px; /* Add spacing between videos */
+    margin-bottom: 10px; /* Add spacing between rows of videos */
+}
+
+.video:last-child {
+    margin-right: 10; /* Remove margin from the last video in each row */
+}
+
+.video iframe {
+    width: 75%; /* Make the video iframe responsive to the container width */
+    height: auto ; /* Maintain the aspect ratio of the video */
+}
+
+
+.video-player {
+    width: 100%;
+}
+
+.video-player video {
+    width: 100%;
+}
+
+.video-details h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.video-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+.comments h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-text p {
+    font-size: 16px;
+    color: #333;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Adjust the padding to reduce the size */
+    text-align: center;
+}
+
+/* Footer Menu styles */
+.footer-menu {
+    text-align: center; /* Center-align the menu items */
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align the menu items horizontally */
+    align-items: center; /* Center-align the menu items vertically */
+}
+
+.footer-menu li {
+    margin: 0 10px; /* Add left and right margin to separate menu items */
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+
